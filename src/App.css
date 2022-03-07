@@ -1,0 +1,161 @@
+body{
+    background-image: url("images/back_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+}
+.header .right_btn {
+    display: flex;
+    align-items: center;
+}
+.header .right_btn img.inner_logo {
+    margin-right: 20px;
+}
+.header .right_btn button.connect_btn {
+    padding: 15px 45px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(95.3deg, #F4353C -40.77%, #A9191E 108.89%);
+    font-family: 'Lato';
+}
+.btn_section .btn_inner_part {
+    text-align: center;
+}
+.btn_section .btn_inner_part .max_btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #252733;
+    border-radius: 25px;
+    margin-top: 80px;
+    width: 50%;
+}
+.btn_section .btn_inner_part .max_btn button.inner_btn {
+    font-size: 52px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 70px;
+    background: transparent;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+.btn_section .btn_inner_part .max_btn img.inner_img {
+    padding-left: 15px;
+}
+.btn_section .btn_inner_part .claim_btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(95.3deg, #F4353C -40.77%, #A9191E 108.89%);
+    box-shadow: 0px 0px 20px #c520ff;
+    border-radius: 30px;
+    margin-top: 120px;
+    width: 50%;
+    justify-content: center;
+}
+.btn_section .btn_inner_part .claim_btn button.inner_btn {
+    font-size: 52px;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 70px;
+    background: transparent;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+}
+section.btn_section .alert.alert-primary > span,
+section.btn_section .alert.alert-danger > span,
+section.btn_section .alert > span {
+    white-space: normal !important;
+    width: 100%;
+    display: block;
+    line-break: anywhere;
+}
+section.btn_section .alert.alert-danger > span {
+    white-space: normal !important;
+    width: 100%;
+    display: block;
+    line-break: auto;
+}
+@media screen and (max-width: 1024px) {
+    body {
+        height: 100vh;
+    }
+    .btn_section .btn_inner_part .claim_btn {
+        width: 70%;
+    }
+    .btn_section .btn_inner_part .max_btn {
+        width: 70%;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .btn_section .btn_inner_part .claim_btn {
+        width: 90%;
+    }
+    .btn_section .btn_inner_part .max_btn {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 600px) {
+    section.btn_section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .btn_section .btn_inner_part .max_btn button.inner_btn {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 32px;
+    }
+    .btn_section .btn_inner_part .max_btn img.inner_img {
+        padding-left: 0px;
+    }
+    .btn_section .btn_inner_part .claim_btn {
+        padding: 5px 0;
+        width: 100%;
+        margin-top: 70px;
+    }
+    .btn_section .btn_inner_part .max_btn {
+        width: 100%;
+    }
+    .header .right_btn {
+        width: calc(100% - 60px);
+    }
+    .header .right_btn button.connect_btn {
+        width: 100%;
+        overflow: hidden;
+    }
+    .header .right_btn button.connect_btn > span {
+        width: 100% !important;
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .btn_section .btn_inner_part .claim_btn button.inner_btn {
+        font-size: 32px;
+    }
+}
